@@ -1,7 +1,67 @@
-#menu
-{
-	position: fixed;
-	width: 100%;
-	height: 35px;
-	background: white;
+html {
+  background: url("https://png.pngtree.com/element_our/md/20180206/md_5a794c39cb442.jpg") no-repeat center center fixed;
+  ;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  scroll-behavior: smooth;
+}
+.navbar {
+  overflow: hidden;
+  background-color: #FF1493;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  width: 100%;
+
+}
+table.blueTable {
+  border: 1px solid #3c5052;
+  background-color: #FFFAF0;
+  width: 80%;
+  text-align: left;
+  border-collapse: collapse;
+}
+
+table.blueTable td,
+table.blueTable th {
+  border: 2px solid #AAAAAA;
+  padding: 10px 10px;
+}
+
+table.blueTable tbody td {
+  font-family: "Fira Code", monospace;
+  font-size: 13px;
+}
+
+table.blueTable tr:nth-child(even) {
+  background: #FFFAF0;
+}
+
+table.blueTable thead {
+  background: #FFFAF0;
+  background: -moz-linear-gradient(top, #aed8d4 0%, #6f9e9d 66%, #4c6467 100%);
+  background: -webkit-linear-gradient(top, #aed8d4 0%, #6f9e9d 66%, #4c6467 100%);
+  background: linear-gradient(to bottom, #aed8d4 0%, #6f9e9d 66%, #4c6467 100%);
+  border-bottom: 2px solid #3c5052;
+
+}
+
+table.blueTable thead th {
+  font-family: "Fira Code", monospace;
+  font-size: 15px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  border-left: 2px solid #E71CAC;
+  width: 0.1%
+}
+
+table.blueTable thead th:first-child {
+  border-left: none;
+}
+
+table.blueTable tfoot td {
+  font-size: 14px;
 }
