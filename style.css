@@ -18,7 +18,7 @@ html {
 }
 table.blueTable {
   border: 1px solid #3c5052;
-  background-color: #FFFAF0;
+  background-color: #FFC0CB;
   width: 80%;
   text-align: left;
   border-collapse: collapse;
@@ -36,11 +36,11 @@ table.blueTable tbody td {
 }
 
 table.blueTable tr:nth-child(even) {
-  background: #FFFAF0;
+  background: #FFC0CB;
 }
 
 table.blueTable thead {
-  background: #FFFAF0;
+  background: #FFC0CB;
   background: -moz-linear-gradient(top, #aed8d4 0%, #6f9e9d 66%, #4c6467 100%);
   background: -webkit-linear-gradient(top, #aed8d4 0%, #6f9e9d 66%, #4c6467 100%);
   background: linear-gradient(to bottom, #aed8d4 0%, #6f9e9d 66%, #4c6467 100%);
