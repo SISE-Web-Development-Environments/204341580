@@ -1,193 +1,212 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:>
+<!-- 
+    author: Yarden Levy
+    id: 204341580 
+    description: my personal website Web-Development-Environments
+     -->
+
 <head>
-<link rel="stylesheet" type="text/css" href="style.css" />
+<link rel="shortcut icon" type="image/x-icon"
+        href="data:image/jpeg;base64,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" />
+    <meta charset="UTF-8">
+    <title>Yarden</title>
+    <meta name="description" content="Yarden's personal website">
+    <meta name="keywords" content="Yarden Levy, Yarden, Levy, Beer Sheva , BGU, Ben Gurion University of the negev">
+    <meta name="author" content="Yarden Levy">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
+	
 <body>
-<div id="menu">
-<li><a href="#about">About Me</a></li>
-<li><a href="#photos">My Photos</a></li>
-<li><a href="#playlist">My Playlist</a></li>
-<li><a href="#like">Like</a></li>
-<li><a href="#qrcoder">QR code</a></li>
-<li><a href="#spa">Q&A</a></li>
-<li><a href="#contact">Contact Me</a></li>
+<div class="navbar">
+	<a href="#"><br>
+            <img src="data:image/jpeg;base64,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"
+                style="width: 35px;" ,style="height:35px" align="center">
+            <br><br>
+        </a>
+        <a href="#About Me"> <i class="fa fa-id-card"></i> About Me</a>
+        <a href="#My Photos"> <i class="fa fa-camera-retro"></i>My Photos</a>
+        <a href="#MyPlaylist"><i class="fa fa-music"></i>My Playlist</a>
+        <a href="#Give me a Like"><i class="fa fa-thumbs-up"></i>Like</a>
+        <a href="#QRCode"><i class="fa fa-barcode"></i>QR Code</a>
+        <a href="#Q&A"><i class="fa fa-info-circle"></i>Q&A</a>
+        <a href="#contact me"><i class="fa fa-fw fa-envelope"></i>Contact Me</a>
+	
 </div>
-		  
-<section id="about" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-about me
-<br/>
-<br/>
-<br/>
-</section>
-
-<section id="photos" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-my photos
-<br/>
-<br/>
-<br/>
-</section>
-
-<section id="playlist" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-my playlist
-<br/>
-<br/>
-<br/>
-</section>
-
-<section id="like" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-give me a like
-<br/>
-<br/>
-<br/>
-</section>
-
-<section id="qrcoder" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-scan my code
-<br/>
-<br/>
-<br/>
-</section>
-
-<section id="spa" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-ans
-<br/>
-<br/>
-<br/>
-</section>
-
-<section id="contact" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-contact me
-<br/>
-<br/>
-<br/>
-</section>
+		<br><br><br><br><br>
+	
+	<div class="main">
+        <h2 style="text-align:center" style="font-family:'monospace'" id="About Me">
+            <p class="subtitle fancy"><span style="font-family:'monospace'">About Me</span></p>
+        </h2>
+        <p align="center">
+            My name is Yarden Levy, I'm 26 years old. Originally from Hertzliya and now lives in Beer Sheva with my boyfriend.<br> 
+			I'm a third year student in the Software and Information Systems Engineering Department (
+            <a href="https://in.bgu.ac.il/en/engn/sise/Pages/default.aspx">SISE</a> )
+            at Ben Gurion University of the negev.<br>
+			If I'm not busy studing I love to dedicate time for workout, mostly running, or reading books.<br>
+            That assignment was hard for me because I never experimented with creatinf websites before.<br>
+            Because of that it was a big challenge for me. The hardest part was to learn how to programming in html.<br>
+            My expectation from the course is to learn interesting things and finish it with a lot of knowledge about building websites.
+        </p>
 
 
-<script type="text/javascript">
-$(function(){
-  $("#nav a").click(function(e){
-    e.preventDefault();
-    $('html,body').scrollTo(this.hash,this.hash); 
-  });
-});
-</script>
-<script type="text/javascript">
- $(document).scroll(function() {
-    $('#menu').toggle($(this).scrollTop()>1000)
- });​
- </script>
+            <h2 style="text-align:center" id="My Photos"><br>
+                <p class="subtitle fancy"><span style="font-family:'monospace'">My Photos</span></p>
+            </h2>
+
+            <div class="w3-content w3-display-container" style="border:10px solid whitesmoke">
+                <img class="mySlides"
+                    src="https://scontent.ftlv15-1.fna.fbcdn.net/v/t1.0-9/s960x960/41314349_10212763777394631_1591665303090102272_o.jpg?_nc_cat=105&_nc_sid=85a577&_nc_ohc=XTxniLFIU9oAX_hVAj2&_nc_ht=scontent.ftlv15-1.fna&_nc_tp=7&oh=dea381b48e10553e1e0329d0ee27e1d9&oe=5EA0659E"
+                    style="width:100%">
+		    <img class="mySlides"
+                    src="https://scontent.ftlv15-1.fna.fbcdn.net/v/t1.0-9/p960x960/86730661_10216343200957983_4558913823980912640_o.jpg?_nc_cat=107&_nc_sid=dd7718&_nc_ohc=msyJs8bfBlsAX-W38g_&_nc_ht=scontent.ftlv15-1.fna&_nc_tp=6&oh=76e9e0030145f2001545ebbd2ad522a5&oe=5EA1B79A"
+                    style="width:100%">
+            </div>
+
+	    <h2 style="text-align:center" id="MyPlaylist"> <br>
+                <p class="subtitle fancy"><span style="font-family:'monospace'">My Playlist</span></p>
+            </h2>
+            <br>
+            <p align="center"> <iframe width="980" height="400" 
+	     src="https://www.youtube.com/embed/videoseries?list=PLCB4F961F723051AC" 
+	     frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe></p>
+		
+	    <h2 style="text-align:center" id="Give me a Like"> <br>
+                <p class="subtitle fancy"><span>Like</span><br><br><br></p>
+            </h2>
+		
+	    <p align="center"><iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fyardenlevy.github.io%2FYarden-s_website&width=450&layout=standard&action=like&size=small&share=true&height=35&appId" 
+		width="450" height="50" style="border:none;overflow:hidden" scrolling="no" 
+		frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe></p>
+		
+	    <h2 style="text-align:center" id="QRCode"> <br>
+                <p class="subtitle fancy"><span style="font-family:'monospace'">QR Code</span></p>
+</div>
+<p align="center">
+   <img src="http://api.qrserver.com/v1/create-qr-code/?color=000000&amp;bgcolor=FFFFFF&amp;data=https%3A%2F%2Fyardenlevy.github.io%2FYarden-s_website%2F&amp;qzone=1&amp;margin=0&amp;size=400x400&amp;ecc=L" 
+	alt="qr code" /><br>
+   <p align="center" style="font-size:20px;font-family:'monospace'"><b><i><mark> Scan my QR-Code</mark></i></b></p></p>
+<h2 style="text-align:center" id="Q&A"> <br>
+            <p class="subtitle fancy"><span style="font-family:'monospace'">Q&A</span></p></h2><br>
+<p align="center">
+            <table class="blueTable">
+                <thead>
+                    <tr>
+                        <th>Web</th>
+                        <th>Content Creation</th>
+                        <th>Search Engine</th>
+                        <th>Comunication character</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td align="center">Web 1.0</td>
+                        <td>החברות מפרסמות תוכן שמשתמשים צורכים </td>
+                        <td>מנוע החיפוש איחזר תוכן ברמת המאקרו.<br>החיפוש היה מאוד מהיר אך
+				פעמים רבות התוצאות לא היו מדויקות. </td>
+                        <td>התוכן כלל בעיקר תוכן סטטי, כאשר ישנה דרך אחת של פרסום תוכן ללא
+				יצירת אינטרקציה מסוימת בין הקוראים או המפרסמים.</td></tr>
+                    <tr>
+                        <td align="center">Web 2.0</td>
+                        <td>משתמשים מפרסמים תוכן שמשתמשים אחרים צורכים, 
+				החברות בנו פלטרפורמות שאפשרו למשתמשים לפרסם תוכן למשתמשים אחרים. 
+				לדוגמה- יוטיוב, ויקיפדיה וכו'.</td>
+                        <td>מנועי חיפוש באינטרנט סוג 2.0 אחזרו תגיות עם תוכן ברמת המיקרו. 
+				תהליך התיוג הוא ידני, מעיק ומכסה אחוזים זניחים של www. <br>
+				סוג זה מתייג דברים רבים: תמונות, אירועים, חדשות, לינקים, בלוגים וידיאו ועוד.<br>
+				בנוסף, בסיס הנתונים של גוגל מאחזר גם תוכן טקסט ברמת המיקרו.</td>
+                        <td>אינטרנט סוג 2.0 עובד יותר בצורת תקשורת דו-כיוונית באמצעות רשתות חברתיות, תיוגים,
+				בלוגים ועוד.</td></tr>
+                    <tr>
+                        <td align="center">Web 3.0</td>
+                        <td>אנשים בונים אפליקציות שמאפשרות אינטרקציה איתן, 
+				חברות בונות פלטפורמות שמאפשרות לאנשים לפרסם את שירותיהם
+				 באמצעות מינוף הקשרים בין אנשים או תכנים ייחודיים. למשל, פייסבוק.</td>
+                        <td>במנועי חיפוש של אינטרנט סוג 3.0 קיימת תקווה לאחזר תוכן מסוג טקסט ברמת המיקרו אשר יתוייג אוטומטית.<br>
+			    דבר זה מרמז על תרגום תוכן מאקרו מהסוג הראשון בכמות עצומה לכדי תוכן מסוג מיקרו.<br>
+			    התוצאה של כך יכולה להיות חיפוש מדויק יותר מכיוון שהתיוג יוכל לפתור חלק מאי הבהירות 
+			    שהומונים וסינונים הביאו לתהליך החיפוש.</td>
+                        <td>באופן לא ברור, אינטרנט מסוג 3.0 אינו מוגדר. בינה מלאכותית והאינטרנט לומים מה המשתמש רוצה ומספקים לו חויית אינטרנט בהתאמה אישית.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </p>
+        <br>
+        <h4 style="font-family:'monospace'" align="center"><b><u> Use case-Searching</u>:</b></h4>
+        <div align="center">
+            The difference between Web 1.0 to Web 3.0 in general:<br>
+            <b>Web1.0:</b> The results of this type will be based only on the words in the query. The results probably won't be accurate and not
+            relevant to the user.<br>
+            <b>Web3.0:</b> The results of this type are much more user-related. They are based on semantic relations and additional actors
+            such as other users, the user himself,<br> the location of the user (GPS) etc. No need
+            for the user to deliver specific query- In web 3.0 it’s enough to send a query which 
+	    is close to the user’s real intentions. <br>
+        </div>
+	<p dir="rtl" align="center">
+            Here is a specific example for the difference:<br>
+            <b>For Web1.0</b><br>
+            ניקח לדוגמה את השאילתה "מפלגת עלה ירוק".<br> 
+		אינטרנט מסוג 1.0 אשר מכיל מידע סטטי יחזיר תוצאות התואמות את מילות השאילתה במדויק. 
+		 החיפוש אומנם יהיה מהיר אך לווא דווקא מדויק.<br> כלומר, התוצאות שיאוחזרו יהיו 
+		דפים אשר יופיעו בהם מילים כגון מפלגה שהיא לא<br> בהכרח זו שהתכוונו אליה, דפים עם המילה עלה או עם הצבע ירוק.
+		<br>כמו כן, כמות המסמכים שיאוחזרו תהיה עצומה בכל חוסר השימוש בסמנטיקה למשל.
+            <br>       
+            <b>For: Web3.0</b><br>
+		אינטרנט מסוג 3.0 כולל בתוכו דפים אשר מתוייגים אוטומטית. סוג זה הינו מתקדם
+		ומכאן שהתוצאות יאוחזרו יותאמו למשתמש ולמשמעות אליה כיוון. הדפים שיאוחזרו יהיו 
+		מדויקים ככל שניתן בכל השימוש בבינה מלאכותית גם אם השאילתה נכתבה בכלליות.
+		<br> כמו כן, במקרה זה קיים סיכוי שיאוחזרו דפים הקשורים לפעילות המשפלה, לפירוקה, לראשי המפלגה ולאג'נדה שלה.<br>
+        </p>
+	
+<br />
+        <h2 style="text-align:center" id="contact me">
+            <p class="subtitle fancy"><span style="font-family:'monospace'">Contact Me</span></p>
+        </h2>
+        <form action="mailto:yarden.levy94@gmail.com" method="post" enctype="text/plain" autocomplete="on">
+            <p align="center"><i class="fa fa-user" aria-hidden="true"></i>
+                Name:&nbsp;&nbsp;&nbsp; <input placeholder="your name" type="text" name="name" size="40"><br>
+                <i class="fa fa-envelope" aria-hidden="true"></i> Email:&nbsp;&nbsp;&nbsp; <input
+                    placeholder="your email" type="text" required name="mail" size="40"><br>
+                <i class="fa fa-comment" aria-hidden="false"></i>Message:&nbsp;<input placeholder="..." required
+                    type="text" name="comment" size="55">
+                <select name=";">
+                    <option value="😎">😎</option>
+                    <option value="😍">😍</option>
+                    <option value="😋">😋</option>
+                    <option value="😁">😁</option>
+                    <option value="😂">😂</option>
+                </select>
+                <br> <br>
+                <button class="contact1-form-btn">
+                    <span>
+                        Send Email
+                    </span>
+                </button>
+
+                <button class="contact1-form-btn" type="reset">
+                    <span>
+                        Reset
+                        <i aria-hidden="true"></i>
+                    </span>
+                </button>
+            </p>
+        </form>
+        <p align="center">
+            <br>
+            <a href="https://www.facebook.com/yarden.levy.7" class="fa fa-facebook"></a>
+            <a href="https://www.github.com/YardenLevy" class="fa fa-github"></a>
+            <a href="mailto:yarden.levy94@gmail.com" class="fa fa-google"></a>
+        </p>
+        <br />
+        <br />
+        <br />
 </body>
+
 </html>
