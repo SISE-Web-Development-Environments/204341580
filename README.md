@@ -2,7 +2,7 @@
 
 - my name: Yarden Levy
 - ID: 204341580
-- link to my webpage:  [click here](https://sise-web-development-environments.github.io/assignment1-YardenLevy/)
+- link to my webpage:  [click here](https://sise-web-development-environments.github.io/204341580/)
 
 This my webpage which was created for a Web Development Environment course.
 The project wes created in HTML5 and CSS3.
